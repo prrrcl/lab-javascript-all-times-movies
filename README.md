@@ -41,7 +41,7 @@ The `src/data.js` contains an array of 250 movies, each of them with all the inf
   "director":"Frank Darabont",
   "duration":"2h 22min",
   "genre":["Crime","Drama"],
-  "rate":"9.3"
+  "rate":9.3
 }
 ```
 
@@ -59,7 +59,11 @@ You have to work on the `src/movies.js` file.
 
 Ohh yes! We have our beloved tests, and you already know how this works. Open the `SpecRunner.html` file on your browser and start coding to pass the test. Remember to focus on one test at a time and read really carefully the instructions to understand what you have to do.
 
-### Iteration 1: Time Format
+### Order to solve iterations
+
+This is the best order: I2 > I3 > I5 > I6 > I1 > I4 > Bonus
+
+### Iteration 1: Time Format (Longest iteration)
 
 We get the info from the **IMDB** web page, but the duration info was saved in a format that difficult us a lot to compare movies.
 
@@ -76,7 +80,7 @@ Finding the longest movie is almost impossible using that format, so let's chang
   "director":"Frank Darabont",
   "duration":"2h 22min",
   "genre":["Crime","Drama"],
-  "rate":"9.3"
+  "rate":9.3
 }
 ```
 
@@ -89,7 +93,7 @@ Should be:
   "director":"Frank Darabont",
   "duration":"142",
   "genre":["Crime","Drama"],
-  "rate":"9.3"
+  "rate":9.3
 }
 ```
  
