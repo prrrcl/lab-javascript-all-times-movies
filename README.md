@@ -136,7 +136,7 @@ Go ahead and create a `howManyMovies` method that receives an array as a paramet
 
 Another famous way to order the movies is to sort them alphabetically using the `title` key. But in this case we only need to print the title of the first 20. Easy Peasy for an expert like you :wink:
 
-Create a `orderAlphabetically` method, that receive an array and return an array of first 20 titles, alphabetically ordered. Return only the title of each movie, and if the array you receive have less than 20 movies, return all of them order
+Create a `orderAlphabetically` method, that receive an array and return an array of first 20 titles, alphabetically ordered. Return only the title of each movie, and if the array you receive have less than 20 movies, return all of them in order
 
 ### BONUS Iteration: Best yearly rate average 
 
