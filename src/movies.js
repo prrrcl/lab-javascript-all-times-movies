@@ -1,6 +1,27 @@
 /* eslint no-restricted-globals: 'off' */
 // Turn duration of the movies from hours to minutes 
 
+function turnHoursToMinutes(array) {
+  var newArray = array.map(function(movie,index){
+    var hours = array[index].duration;
+    if(hours.includes('h') && hours.includes('min')){
+      var hoursWithoutH = hours.split("h");
+      var hoursToMinutes = parseInt(hoursWithoutH[0])*60;
+      var min1 = hours.split(" ");
+    var splittedMin = parseInt(min1[1]);
+    
+    return hoursToMinutes+splittedMin;
+    }else if(hours.includes('h')){
+      var hourWithoutMin = hours.split("h");
+      return Number(hourWithoutMin[0]);
+    }else{
+      var onlyMinutes = parseInt(hours);
+      return onlyMinutes
+    }
+    
+  });
+  return newArray;
+}
 
 // Get the average of all rates with 2 decimals 
 
