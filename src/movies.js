@@ -7,7 +7,14 @@ function turnHoursToMinutes(array) {
     if (hours.includes('h') && !hours.includes('min')) {
       var onlyHours = hours.split("h");
       var onlyHoursToMinutes = parseInt(onlyHours[0]) * 60;
-      return { duration: onlyHoursToMinutes };
+      return { 
+        title: movie.title,
+        year: movie.year,
+        director: movie.director,
+        duration: onlyHoursToMinutes,
+        genre: movie.genre,
+        rate: movie.rate
+       };
     }
     if (hours.includes('h') && hours.includes('min')) {
       var hoursWithoutH = hours.split("h");
@@ -15,13 +22,34 @@ function turnHoursToMinutes(array) {
       var min1 = hours.split(" ");
       var splittedMin = parseInt(min1[1]);
 
-      return { duration: hoursToMinutes + splittedMin };
+      return { 
+        title: movie.title,
+        year: movie.year,
+        director: movie.director,
+        duration: hoursToMinutes + splittedMin,
+        genre: movie.genre,
+        rate: movie.rate
+       };
     } else if (hours.includes('h')) {
       var hourWithoutMin = hours.split("h");
-      return { duration: Number(hourWithoutMin[0]) };
+      return { 
+        title: movie.title,
+        year: movie.year,
+        director: movie.director,
+        duration: Number(hourWithoutMin[0]),
+        genre: movie.genre,
+        rate: movie.rate
+       };
     } else {
       var onlyMinutes = parseInt(hours);
-      return { duration: onlyMinutes }
+      return { 
+        title: movie.title,
+        year: movie.year,
+        director: movie.director,
+        duration: onlyMinutes,
+        genre: movie.genre,
+        rate: movie.rate
+       }
     }
 
   });
@@ -55,7 +83,9 @@ function dramaMoviesRate(arr) {
 
 // Order by time duration, in growing order
 
-
+function orderByDuration(arr){
+  
+}
 // How many movies did STEVEN SPIELBERG
 
 function howManyMovies(arr) {
